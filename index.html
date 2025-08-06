@@ -5,100 +5,185 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Time Management for College Students</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    /* Global Styles */
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
-      background-color: #f4f4f4;
+      background-color: #f2f2f2;
       color: #333;
     }
 
-    header {
-      background-color: #005a9c;
+    a {
+      text-decoration: none;
       color: white;
-      padding: 20px 0;
-      text-align: center;
     }
 
-    main {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-      background-color: white;
-    }
-
-    h1, h2 {
-      color: #005a9c;
-    }
-
-    section {
-      margin-bottom: 30px;
-    }
-
-    footer {
-      text-align: center;
-      background-color: #333;
-      color: white;
+    /* Navigation */
+    nav {
+      background-color: #003366;
       padding: 10px 0;
+    }
+
+    .nav-container {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .nav-container h1 {
+      color: white;
+    }
+
+    .nav-links a {
+      margin-left: 20px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1555967524-58f1f6d596d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      padding: 0 20px;
+    }
+
+    /* Main Content */
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      color: #003366;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
       margin-top: 40px;
     }
 
-    @media (max-width: 600px) {
-      body {
-        font-size: 16px;
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
       }
 
-      header, footer {
-        padding: 15px;
+      .nav-links {
+        margin-top: 10px;
       }
 
-      main {
-        padding: 15px;
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h2 {
+        font-size: 1.5rem;
       }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Importance of Time Management</h1>
-    <p>For College Students</p>
-  </header>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="nav-container">
+      <h1>CollegeLife</h1>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Articles</a>
+        <a href="#">Tips</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </nav>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Master Your Time, Master Your Life</h2>
+  </section>
+
+  <!-- Main Content -->
   <main>
-    <section>
+    <div class="card">
       <h2>Why Time Management Matters</h2>
       <p>
-        Time management is a crucial skill for college students. With multiple classes, assignments,
-        extracurricular activities, and sometimes part-time jobs, balancing everything can be
-        overwhelming without proper planning.
+        Time management is a critical life skill that every college student should learn. Managing your time wisely helps reduce stress, improve productivity, and ensures a healthy balance between academics and personal life.
       </p>
-    </section>
+    </div>
 
-    <section>
-      <h2>Tips to Manage Time Effectively</h2>
+    <div class="card">
+      <h2>Effective Tips</h2>
       <ul>
-        <li>Make a daily or weekly schedule</li>
-        <li>Set clear goals for each study session</li>
-        <li>Use breaks wisely to recharge</li>
-        <li>Prioritize tasks by deadlines and importance</li>
-        <li>Limit distractions during study time</li>
+        <li>Create a realistic daily or weekly schedule</li>
+        <li>Use digital tools like calendars or to-do apps</li>
+        <li>Break tasks into smaller, manageable chunks</li>
+        <li>Eliminate unnecessary distractions</li>
+        <li>Reward yourself after completing important tasks</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
+    <div class="card">
       <h2>Conclusion</h2>
       <p>
-        Developing time management skills early in college can lead to better grades, lower stress,
-        and a more enjoyable academic experience. It helps in building a foundation for future
-        personal and professional success.
+        Learning time management helps you stay focused, reduce burnout, and succeed academically. It’s a habit that pays off not just in college, but throughout life.
       </p>
-    </section>
+    </div>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 College Insights | Designed by You</p>
+    <p>&copy; 2025 CollegeLife | All Rights Reserved</p>
   </footer>
 
 </body>
